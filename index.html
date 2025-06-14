@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Página Personal - Estilo México 86</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e5ffe5;
+      color: #004d00;
+    }
+    header {
+      background-color: #006600;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-bottom: 5px solid #ff0000;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #009900;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+      font-weight: bold;
+      display: block;
+    }
+    nav ul li a:hover {
+      background-color: #ff0000;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      border-bottom: 1px solid #ccc;
+    }
+    section h2 {
+      color: #006600;
+      border-left: 5px solid #ff0000;
+      padding-left: 10px;
+      font-size: 1.8rem;
+    }
+    section ul {
+      list-style: square inside;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 15px 0;
+    }
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #004d00;
+      color: white;
+      font-size: 14px;
+    }
+    #login {
+      background: #ccffcc;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    #login input {
+      margin: 10px;
+      padding: 10px;
+      width: 200px;
+      border: 1px solid #006600;
+    }
+    #login button {
+      padding: 10px 20px;
+      background: #ff0000;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #login button:hover {
+      background: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>¡Bienvenido a mi sitio México 86!</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#acerca">Acerca de</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyecto">Proyecto</a></li>
+      <li><a href="#museo">Museo Virtual</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section id="login">
+    <h2>Acceso</h2>
+    <form onsubmit="return verificarCredenciales();">
+      <input type="text" id="usuario" placeholder="Usuario" required><br>
+      <input type="password" id="clave" placeholder="Contraseña" required><br>
+      <button type="submit">Ingresar</button>
+    </form>
+  </section>
+
+  <section id="inicio">
+    <h2>Inicio</h2>
+    <p>Este es el párrafo principal de la página.</p>
+    <img src="https://vanguardia.com.mx/binrepository/780x519/0c0/0d0/upper-right/11604/MJKP/james-herencia-forzada_1-8491911_20240314015956.jpg" alt="Descripción de la imagen">
+  </section>
+
+  <section id="acerca">
+    <h2>Acerca de</h2>
+    <p>Soy un entusiasta del diseño y la programación. Me gusta aprender constantemente y aplicar mis conocimientos en proyectos creativos.</p>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Desarrollo web</li>
+      <li>Diseño gráfico</li>
+      <li>Fotografía</li>
+      <li>Programación en Python</li>
+      <li>Aprendizaje continuo</li>
+    </ul>
+  </section>
+
+  <section id="proyecto">
+    <h2>Proyecto</h2>
+    <p>Este video muestra un resumen de mi trabajo reciente:</p>
+    <iframe src="https://app.animaker.com/animo/gQZ4ZhKcAJ4q06eA/" title="Video del Proyecto"></iframe>
+  </section>
+
+  <section id="museo">
+    <h2>Museo Virtual</h2>
+    <p>Explora algunas imágenes seleccionadas de arte y arquitectura clásica:</p>
+    <img src="https://i.pinimg.com/736x/3e/c8/af/3ec8af89ae7ec1a9ef1a02c208b72c8b.jpg" alt="spider homero">
+    <img src="https://i.pinimg.com/originals/80/98/64/809864723bef1067ebfc0fdc3bc5516d.jpg" alt="motocicleta">
+    <img src="https://i.pinimg.com/564x/6c/21/b1/6c21b12a3f16e52986b79ae4240a7e77.jpg" alt="ronaldo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsEDSMdXzMBOmRvgdhlIdTGGaSM8q1qBjTwg&s" alt="ronaldinho">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Derechos reservados.</p>
+  </footer>
+
+  <script>
+    function verificarCredenciales() {
+      const usuario = document.getElementById("usuario").value;
+      const clave = document.getElementById("clave").value;
+      if (usuario === "admin" && clave ===
